@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "3838:3838"
+  rocker:
+    image: "rocker/shiny:latest"
