@@ -17,8 +17,8 @@ shinyServer(function(input, output,session) {
     
     ###Add a csv file to the www directory
     observeEvent(input$addcsv, {
-        # session$sendCustomMessage(type = 'testmessage',
-                                  # message = 'Thank you for clicking')
+        session$sendCustomMessage(type = 'testmessage',
+                                  message = 'Thank you for clicking')
         # write.csv(x = mtcars,file = paste0('~/zip-shiny/zipper/www/mtcars',input$number,'.csv'))
         fileName <- paste0('mtcars',input$number,'.csv')
         # Write the data to a temporary file locally

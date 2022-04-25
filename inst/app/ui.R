@@ -30,7 +30,7 @@ shinyUI(fluidPage(
                 downloadButton("downloadData", label = "Download"),
             )
         ),
-        mainPanel(h6("Sample download", align = "center"),
+        mainPanel(h6("Write to local Shiny Server and Download Zip File", align = "center"),
                   tags$head(tags$script(src = "message-handler.js")),
                   textOutput("files_list"))
     )
